@@ -33,6 +33,17 @@ function getHandName(num) {
   }
 }
 
+// 結果の判定
+function getResult (com, hum) {
+  if (hum === com) {
+    return '結果はあいこでした。';
+  } else if ((com === GU && hum === PA) || (com === CHOKI && hum === GU) || (com === PA && hum === CHOKI)) {
+    return '勝ちました。';
+  } else {
+    return '負けました。';
+  }
+}
+
 /* 実行する処理 ***********************/
 let hum = getHumHand();
 /* console.log(hum);         関数を呼び出す
