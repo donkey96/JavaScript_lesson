@@ -59,4 +59,10 @@ function janken () {
     alert(getResultMsg(com, hum));
     return getResult(com, hum);
   }
+
+let win = 0;
+let isLose = false;
+while (!isLose) {
+  
+}
 }
