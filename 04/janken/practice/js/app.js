@@ -21,6 +21,18 @@ function getComHand() {
   return Math.floor(Math.random() * 3) + 1; // 関数を追加
 }
 
+// コンピュータの手の名前を取得
+function getHandName(num) {
+  switch (num) {
+    case GU:
+      return 'グー';
+    case CHOKI:
+      return 'チョキ';
+    case PA:
+      return 'パー';
+  }
+}
+
 /* 実行する処理 ***********************/
 let hum = getHumHand();
 /* console.log(hum);         関数を呼び出す
