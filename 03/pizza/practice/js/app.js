@@ -3,9 +3,11 @@ budget = parseFloat(budget);
 
 let isHungry = confirm('お腹は空いていますか？');
 
-if (budget >= 1500 && isHungry) {
+if (true !== isHungry){
+  alert('今日はご飯はいいや');
+} else if (budget >= 1500) {
   alert('ピザを注文しました');
-} else if (budget >= 500 && isHungry) {
+} else if (budget >= 500) {
   alert('ポテトを買いました');
 } else {
   alert('節約、節約...');
