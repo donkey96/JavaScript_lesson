@@ -5,7 +5,7 @@ let isHungry = confirm('お腹は空いていますか？');
 
 if (budget >= 1500 && isHungry) {
   alert('ピザを注文しました');
-} else if (budget >= 500) {
+} else if (budget >= 500 && isHungry) {
   alert('ポテトを買いました');
 } else {
   alert('節約、節約...');
