@@ -29,7 +29,7 @@ if (hum !== GU && hum !== CHOKI && hum !== PA) {
       comHandName = 'パー';
       break;
   }
-  
+
   // 結果の判定
   let msgResult = '';
   if (hum === com) {
@@ -39,4 +39,7 @@ if (hum !== GU && hum !== CHOKI && hum !== PA) {
   } else {
     msgResult = '負けました。';
   }
+  // 最終的な結果の表示
+  msgResult = msgResult + 'コンピュータの出した手は「' + comHandName + '」でした';
+  alert(msgResult);
 }
