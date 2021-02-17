@@ -44,6 +44,11 @@ function getResult (com, hum) {
   }
 }
 
+// 最終的な結果のメッセージ
+function getResultMsg(com, hum) {
+  return getResult(com, hum) + 'コンピュータの出した手は「' + getHandName(com) + '」でした。';
+}
+
 /* 実行する処理 ***********************/
 let hum = getHumHand();
 /* console.log(hum);         関数を呼び出す
