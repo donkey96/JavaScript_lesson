@@ -15,3 +15,8 @@ function getHumHand() {  // 関数にする
     return hum;
   }
 }
+
+/* 実行する処理 ***********************/
+let hum = getHumHand();
+/* console.log(hum);         関数を呼び出す
+                             コンソールを使って動作確認。終わり次第削除(今回はコメントアウトしておく) */
