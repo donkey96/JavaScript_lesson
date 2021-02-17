@@ -58,4 +58,5 @@ if (!hum) { // 入力値をチェック
 } else {
   let com = getComHand();
   // console.log(com); 確認用なので確認後は削除
+  alert(getResultMsg(com, hum));
 }
