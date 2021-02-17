@@ -12,5 +12,21 @@ if (hum !== GU && hum !== CHOKI && hum !== PA) {
   // 入力ちが不適切な場合
   alert('入力値をうまく認識できませんでした。ブラウザを再読み込みすると、もう一度挑戦できます。');
 } else {
-  
+
+  // コンピュータの手を決める
+  let com = Math.floor(Math.random() * 3) + 1;
+
+  // コンピュータの手の名前
+  let comHandName = '';
+  switch (com) {
+    case GU:
+      comHandName = 'グー';
+      break;
+    case CHOKI:
+      comHandName = 'チョキ';
+      break;
+    case PA:
+      comHandName = 'パー';
+      break;
+  }
 }
