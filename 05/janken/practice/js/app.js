@@ -57,7 +57,6 @@ function janken () {
   } else {
     let com = getComHand();
     alert(getResultMsg(com, hum));
+    return getResult(com, hum);
   }
 }
-
-janken();
