@@ -16,6 +16,11 @@ function getHumHand() {  // 関数にする
   }
 }
 
+// コンピュータの手を決める
+function getComHand() {
+  return Math.floor(Math.random() * 3) + 1; // 関数を追加
+}
+
 /* 実行する処理 ***********************/
 let hum = getHumHand();
 /* console.log(hum);         関数を呼び出す
@@ -23,5 +28,6 @@ let hum = getHumHand();
 if (!hum) { // 入力値をチェック
   alert('入力値をうまく認識できませんでした。ブラウザを再読み込みすると、もう一度挑戦できます。');
 } else {
-
+  let com = getComHand();
+  // console.log(com); 確認用なので確認後は削除
 }
