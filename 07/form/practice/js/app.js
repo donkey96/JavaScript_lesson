@@ -19,3 +19,9 @@ button.addEventListener('click', function() {
   // フォームの表示
   form.style.display = 'block';
 });
+
+// テキストエリアでキーをタイプしたとき
+textarea.addEventListener('keyup', function () {
+  let currentTextNum = textarea.value.length;
+  textMessage.innerHTML = '<p>あと「' + (maxTextNum - currentTextNum) + '」文字入力できます。</p>';
+});
