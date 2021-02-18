@@ -24,6 +24,12 @@ parent.insertBefore(timeMessage, null)
 button.addEventListener('click', function() {
   // フォームの表示
   form.style.display = 'block';
+
+  // タイマー処理で残り時間を表示
+  let itmerId = setInterval(function() {
+    timeMessage.innerHTML = '<p>制限時間:' + reminingTimeNum + '秒</p>';
+    reminingTimeNum--;
+  }, 1000);
 });
 
 // テキストエリアでキーをタイプしたとき
