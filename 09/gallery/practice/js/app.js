@@ -6,3 +6,8 @@ let album =  [
   {src: 'img/4.jpg', msg: '帰りはロープウェイでスイスイ'},
   {src: 'img/5.jpg', msg: '〆のお蕎麦です'}
 ];
+
+// 最初のデータを表示しておく
+let mainImage = document.createElement('img');
+mainImage.setAttribute('src', album[0].src);
+mainImage.setAttribute('alt', album[0].msg);
