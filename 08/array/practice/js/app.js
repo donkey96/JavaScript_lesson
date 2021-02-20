@@ -6,3 +6,8 @@ console.log(results);
 
 // インデックスが「０」の要素をコンソールに表示
 console.log(results[0]);
+
+// 配列に所属するデータをfor文で全て表示
+for(let i = 0; i < results.length; i++){
+  console.log(results[i]);
+}
