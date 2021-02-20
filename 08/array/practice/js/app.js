@@ -9,5 +9,5 @@ console.log(results[0]);
 
 // 配列に所属するデータをfor文で全て表示
 for(let i = 0; i < results.length; i++){
-  console.log(results[i]);
+  console.log('index: ' + i + ' データ: ' + results[i]);
 }
