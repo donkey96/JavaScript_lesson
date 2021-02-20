@@ -7,6 +7,8 @@ let omikuji = {
   }
 }
 
+console.log(omikuji.getResult());
+
 /* Math.randomで「０〜１」の間でランダムに数字を作る（少数も含む）
    そこに「* results.length」をどうカッコ内で行うことで「０〜１」→「０〜配列の最大数」となる
     最後にMath.floorで生成した数字を整数化する。*/
