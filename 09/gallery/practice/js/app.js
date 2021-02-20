@@ -11,3 +11,6 @@ let album =  [
 let mainImage = document.createElement('img');
 mainImage.setAttribute('src', album[0].src);
 mainImage.setAttribute('alt', album[0].msg);
+
+let mainMsg = document.createElement('p');
+mainMsg.innerText = mainImage.alt;
