@@ -27,3 +27,10 @@ for (let i = 0; i < album.length; i++) {
   thumbImage.setAttribute('alt', album[i].msg);
   thumbFlame.insertBefore(thumbImage, null);
 }
+
+// クリックした画像をメインにする
+thumbFlame.addEventListener('click', function (event) {
+  if (event.target.src) {
+    
+  }
+});
