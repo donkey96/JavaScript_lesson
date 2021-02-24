@@ -4,7 +4,9 @@ $(function () {
     $.ajax({
       url : "http://zipcloud.ibsnet.co.jp/api/search?zipcode=" + $('#zipcode').val(),
       dataType : 'jsonp',
-    })
-  })
+    }).done(function (data) {
+      console.log(data); // 取得できているかの確認。後で消す
+    });
+  });
 });
 
