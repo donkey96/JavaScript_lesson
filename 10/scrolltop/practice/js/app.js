@@ -11,4 +11,9 @@ $(function () {
       topBtn.fadeOut(); // フェードアウトで非表示
     }
   });
+
+  // クリックで上に戻るボタン
+  topBtn.click(function (event) {
+    event.preventDefault();
+  });
 });
