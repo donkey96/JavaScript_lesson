@@ -6,7 +6,7 @@ $(function() {
       dataType : 'jsonp',
     }).done(function(data) {
       if (data.results) {
-      // データが取得できたときの処理を書く
+        setDate(data.results[0]);
       } else {
         alert('該当するデータが見つかりませんでした');
       }
