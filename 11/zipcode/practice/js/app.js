@@ -14,5 +14,13 @@ $(function() {
       alert('通信に失敗しました');
     });
   });
+
+  // データ取得が成功したときの処理
+  function setDate(data) {
+    // 取得したデータを各HTML要素に代入
+    $('#prefecture').val(data.address1); // 都道府県名
+    $('#city').val(data.address2); // 市区町村名
+    $('#address').val(data.address3); // 町域名
+  }
 });
 
