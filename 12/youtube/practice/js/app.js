@@ -1,4 +1,4 @@
-// リクエストパラメータのセット
+i// リクエストパラメータのセット
 const KEY = 'AIzaSyAS9vJ4dzfUgwk3vtECjEXDJgsjCFK731s'; // API KEY
 let url = 'https://www.googleapis.com/youtube/v3/search?'; // API URL
 url += 'type=video';            // 動画を検索する
@@ -26,3 +26,18 @@ $(function() {
     alert('通信に失敗しました');
   });
 });
+
+// データ取得が成功したときの処理
+function setData(data) {
+  let result = '';
+  let video  = '';
+  // 動画を表示するHTMLを作る
+  for (let i = 0; i < data.items.length; i++) {
+    video   = '<iframe src="https://www.youtube.com/embed/"';
+    video  += data.items[i].id.videoId;
+    video  += '" allowfullscreen></iframe>';
+    result += '<div class="video">' + video + '</div>';
+  }
+  // HTMLに反映する
+  $('#videoList').html(result);
+}
