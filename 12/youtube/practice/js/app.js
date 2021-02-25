@@ -15,5 +15,9 @@ $(function() {
   $.ajax({
     url : url,
     dataType : 'jsonp'
-  })
+  }).done(function(data) {
+    // データ取得が成功したときの処理
+  }).fail(function(data) {
+    alert('通信に失敗しました');
+  });
 });
