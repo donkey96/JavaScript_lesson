@@ -8,3 +8,12 @@ url += '&videoEmbeddable=true'; // webページに埋め込み可能な動画の
 url += '&videoSyndicated=true'; // youtube.com 以外で再生できる動画のみに限定
 url += '&maxResults=6';         // 動画の最大取得数
 url += '&key=' + KEY;           // API KEY
+
+// HTMLが読み込まれてから実行する処理
+$(function() {
+  // youtubeの動画を検索して取得
+  $.ajax({
+    url : url,
+    dataType : 'jsonp'
+  })
+});
