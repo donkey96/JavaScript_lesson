@@ -16,7 +16,12 @@ $(function() {
     url : url,
     dataType : 'jsonp'
   }).done(function(data) {
+    if (data.items) {
     // データ取得が成功したときの処理
+    } else {
+      console.log(data);
+      alert('該当するデータが見つかりませんでした');
+    }
   }).fail(function(data) {
     alert('通信に失敗しました');
   });
