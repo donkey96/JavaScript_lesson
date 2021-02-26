@@ -24,3 +24,9 @@ h3 {
   margin: 20px;
   width: 560px;
 }
+
+#videoList .video iframe {
+  border: none;
+  height: 315px;
+  width: 560px;
+}
